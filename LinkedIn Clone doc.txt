@@ -1,9 +1,0 @@
-Jai Shree Krishna 
-This the project which I will be showcased in my resume 
-
---------------------------------------------------- 
-Do it very carefully and understand each and every point very nicely  
-********* Some Key Points **********
---> z-index : it is used to stack th eorder of an element  
--->padding : (top-bottom), (left-right)
-box-shadow=(horizontal offset, vertical offset , blur , color)

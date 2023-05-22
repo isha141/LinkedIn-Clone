@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LinkedIn Website - Design</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <nav class="navbar">
+      <div class="nav-left">  
+      <!-- click on logo it will give back to home page  -->
+        <a href="index.html" class="logo"><img src="Images/logo.png" alt="logo:)" srcset=""></a> 
+          <div class="search_box">
+             <img src="Images/search.png" alt="Search" srcset="">
+              <input type="text"  placeholder="Search">
+          </div>
+      </div> 
+      <div class="nav-centre"> 
+         <ul>
+          <li><a href="#"><img src="Images/home.png" alt="Home" srcset=""><span>Home</span></a></li>
+          <li><a href="#"><img src="Images/network.png" alt="Network" srcset=""><span>My Network</span></a></li>
+          <li><a href="#"><img src="Images/jobs.png" alt="Jobs" srcset=""><span>Jobs</span></a></li>
+          <li><a href="#"><img src="Images/message.png" alt="Message" srcset=""><span>Message</span></a></li>
+          <li><a href="#"><img src="Images/notification.png" alt="Notification" srcset=""><span>Notification</span></a></li>
+         </ul>
+      </div>
+      <div class="nav-right">  
+          <div class="online">
+            <img src="Images/user1.jpeg" class="nav-profile-img" alt="User" srcset="" onclick="toggleMenu()">
+          </div>
+      </div> 
+      <!-- ----------------This is for the profile drp down menu ------------------  --> 
+     <div class="profile_menu_wrap" id="profile_menu">
+        <div class="profile_menu">
+          <div class="user_info">
+            <img src="Images/user1.jpeg" alt="" srcset="">
+             <div>
+               <h3>Isha Jindal</h3> 
+               <small>Software Engineer At Microsoft</small> 
+             </div> 
+          </div>
+          <div class="view_profile">
+             <a href="#">View Profile </a>
+          </div> 
+          <hr>
+         <div class="account_section">
+            <h2>Account</h2>
+            <li><a href="#"> <img src="Images/premium.png" alt="" srcset=""> Try Premium For Free</a></li>
+            <li><a href="#"> Setting Privacy</a></li>
+            <li><a href="#"> Language </a></li>
+            <li><a href="#"> Help</a></li>
+          </div>
+          <hr> 
+          <div class="account_section">
+           <h2>Manage</h2>
+           <li><a href="#">Post & Activity</a></li>
+           <li><a href="#">Job & Posting Account</a></li>
+          </div> 
+          <hr>  
+          <div class="account_section">
+          <li><a href="#">Sign Out</a></li>
+          </div>
+        </div>
+     </div>
+
+</nav> 
+    <!-------Navbar Close  ---------->  
+<div class="container">
+   <div class="profile_main"> 
+      <div class="profile_container">
+            <img src="Images/cover_pic.jpeg" alt="" width="100%"> 
+         <div class="profile_container_inner"> 
+                <img src="Images/user1.jpeg" class="profile_pic" alt="" srcset="">
+                <h1>Isha Jindal</h1> 
+                <b>Software Engineer At Microsoft </b> 
+                <p>Dehradun, India &middot; <a href="#"> Contact Info</a></p> 
+                <div class="connections">
+                    <a href="#" >500+ connections</a>
+                </div>
+                <div class="mutual_connections">
+                     <img src="Images/user-5.png" alt="">
+                     <span>1 mutual connection: Orlando Diggs</span>
+                </div> 
+            
+            <div class="profile_btn"> 
+               <div class="connect"> 
+                  <a href="#"><img src="Images/connect.png" alt="" srcset="">Connect</a> </div>
+               <div class="connect">
+                  <a href="#"><img src="Images/send_profile.png" alt="" srcset="" >Message</a></div>
+               <div class="more">
+                   <a href="#">More</a></div>
+            </div>
+         </div> 
+      </div>
+      <div class="profile_description">
+             <h2>About</h2>
+             <p>The success of every web site depends on search engine optimization and digital marketing staretygy. If You are on the first page of all major seacrh engines then you are ahead among your competitior</p>
+            <a href="#" class="see_more_link">See More...</a> 
+      </div> 
+      <div class="profile_description">
+          <h2>Education</h2>   
+         <div class="education_image">
+            <img src="Images/eduaction.jpeg" alt="" srcset="">
+            <a href="#">Graphic Era Deemed To Be University</a> 
+            <small>Bachelor of Technology- B.Tech Computer Science</small> 
+            <small class="year">Jul 2020 - Jul 2024</small>
+            <small>Grades:9.17 CGPA</small>
+         </div> 
+         <div class="skills">
+             <b>Skills :</b>  
+             <li>Python, </li>
+             <li>Data Structure And Algorithms, </li>
+             <li>Object Oriented Programming, </li>
+             <li>HTML/CSS, </li> 
+             <li>C/C++, </li>
+         </div> 
+         <hr>
+         <div class="education_image">
+            <img src="Images/school.jpeg" alt=""> 
+            <a href="#">Shemford Futuristic School</a>
+            <small>High School</small> 
+            <small class="year">2019 -2020</small>
+            <small>Percentage: 93.6%</small>
+         </div>  
+         <hr>
+         <div class="education_image">
+            <img src="Images/school.jpeg" alt=""> 
+            <a href="#">Shemford Futuristic School</a>
+            <small>Class 10<sup>th</sup></small> 
+            <small class="year">2018 -2019</small>
+            <small>Grades:9/10</small>
+         </div>  
+      </div>  
+      <div class="profile_description"> 
+         <h2>Skills</h2>  
+         <div class="skills_set"> 
+          <a href="#">Python (Programming Language)</a>  
+          <hr>
+          <a href="#">Web Development</a>  
+          <hr>
+          <a href="#">C/C++, </a>  
+          <hr>
+          <a href="#">HTML/CSS</a>  
+          <hr> 
+          <a href="#">Communications</a>
+          <hr>
+          <a href="#">LeaderShip</a>
+         </div>
+         <hr>
+      </div>
+      <div class="profile_description"> 
+        <h2>Language</h2>   
+          <div class="language"> 
+            <b>English</b> 
+           <hr>
+           <b>Hindi</b>
+          </div>
+      </div>
+   </div>
+         <!-- -----Profile sidebar -------- -->
+      <div class="profile_sidebar">
+            <div class="sidebar_ad">
+               <small>Ad &middot; &middot; &middot;</small> 
+               <p>Master the 5 principle of Web Designing</p> 
+                <div>
+                <img src="Images/user1.jpeg" alt="" srcset="">
+                <img src="Images/mi-logo.png" alt="" srcset="">
+                </div> 
+                <b>Brand And Demand in Xiaomi</b> 
+                <a href="#" class="learn_more">Learn More</a>
+            </div> 
+         <div class="sidebar_people">
+              <h3>People Also Viewed </h3> 
+            <div class="sidebar_people_row">
+                  <img src="Images/user-2.png" alt="" srcset=""> 
+               <div>
+                  <b>Anurag Roy  </b> 
+                  <small>SDE At Atlassain |150k+ LinkedIn </small> 
+                  <a href="#">Connect</a>
+               </div>
+            </div>
+            <hr> 
+             <div class="sidebar_people_row">
+                  <img src="Images/user-3.png" alt="" srcset=""> 
+               <div>
+                  <b>Anshika Gupta</b> 
+                  <small>Linked In Top Voice| Software Engineer| Content Creator</small> 
+                  <a href="#">Connect</a>
+               </div>
+            </div>
+             <hr>
+              <div class="sidebar_people_row">
+                  <img src="Images/user-1.png" alt="" srcset=""> 
+               <div>
+                  <b>Subham Pandey</b> 
+                  <small>Sofware Development Engineer II At Amazon</small> 
+                  <a href="#">Connect</a>
+               </div>
+            </div>
+            <hr>
+             <div class="sidebar_people_row">
+                  <img src="Images/user-4.png" alt="" srcset=""> 
+               <div>
+                  <b>Ayushi Mittal</b> 
+                  <small>Teacher | SDE-2 At Walmart Global Tech</small> 
+                  <a href="#">Connect</a>
+               </div>
+            </div> 
+            <hr>
+             <div class="sidebar_people_row">
+                  <img src="Images/user-6.jpeg" alt="" srcset=""> 
+               <div>
+                  <b>Khusboo Verma</b> 
+                  <small>Software Engineer, Appwrite| 117k+ Twitter | 94k+ LinkedIn</small> 
+                  <a href="#">Connect</a>
+               </div>
+            </div>
+         </div>
+      </div> 
+</div>
+   <div class="profile_footer">
+         <div class="sidebar_links">
+             <a href="#" class="sidebar_links_info">About</a>
+             <a href="#" class="sidebar_links_info">Accessibility</a>
+             <a href="#" class="sidebar_links_info">Help Centre</a>
+             <a href="#" class="sidebar_links_info">Privacy And Terms</a>
+             <a href="#" class="sidebar_links_info">Ad Choice</a>
+             <a href="#" class="sidebar_links_info">Adverstising</a>
+             <a href="#" class="sidebar_links_info">Business Service </a>
+             <a href="#" class="sidebar_links_info">Get The LinkedIn app</a>
+             <a href="#" class="sidebar_links_info">More</a> 
+              
+            <div class="copyright_message">
+              <img src="Images/logo.png" alt="">
+              <span>LinkedIn Corporation copyright &copy 2023</span>
+            </div>
+         </div>
+   </div>
+   <script>
+       let profile_menu=document.getElementById('profile_menu');
+        function toggleMenu(){
+           profile_menu.classList.toggle("open-menu")
+        }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+  

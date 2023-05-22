@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LinkedIn Website - Design</title> 
+   <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <nav class="navbar">
+      <div class="nav-left">  
+      <!-- click on logo it will give back to home page  -->
+        <a href="index.html" class="logo"><img src="Images/logo.png" alt="logo:)" srcset=""></a> 
+          <div class="search_box">
+             <img src="Images/search.png" alt="Search" srcset="">
+              <input type="text"  placeholder="Search">
+          </div>
+      </div> 
+      <div class="nav-centre"> 
+         <ul>
+          <li><a href="#"><img src="Images/home.png" alt="Home" srcset=""><span>Home</span></a></li>
+          <li><a href="#"><img src="Images/network.png" alt="Network" srcset=""><span>My Network</span></a></li>
+          <li><a href="#"><img src="Images/jobs.png" alt="Jobs" srcset=""><span>Jobs</span></a></li>
+          <li><a href="#"><img src="Images/message.png" alt="Message" srcset=""><span>Message</span></a></li>
+          <li><a href="#"><img src="Images/notification.png" alt="Notification" srcset=""><span>Notification</span></a></li>
+         </ul>
+      </div>
+      <div class="nav-right">  
+          <div class="online">
+            <img src="Images/user1.jpeg" class="nav-profile-img" alt="User" srcset="" onclick="toggleMenu()">
+          </div>
+      </div> 
+      <!-- ----------------This is for the profile drp down menu ------------------  --> 
+     <div class="profile_menu_wrap" id="profile_menu">
+        <div class="profile_menu">
+          <div class="user_info">
+            <img src="Images/user1.jpeg" alt="" srcset="">
+             <div>
+               <h3>Isha Jindal</h3> 
+               <small>Software Engineer At Microsoft</small> 
+             </div> 
+          </div>
+          <div class="view_profile">
+             <a href="profile-page.html">View Profile </a>
+          </div> 
+          <hr>
+         <div class="account_section">
+            <h2>Account</h2>
+            <li><a href="#"> <img src="Images/premium.png" alt="" srcset=""> Try Premium For Free</a></li>
+            <li><a href="#"> Setting Privacy</a></li>
+            <li><a href="#"> Language </a></li>
+            <li><a href="#"> Help</a></li>
+          </div>
+          <hr> 
+          <div class="account_section">
+           <h2>Manage</h2>
+           <li><a href="#">Post & Activity</a></li>
+           <li><a href="#">Job & Posting Account</a></li>
+          </div> 
+          <hr>  
+          <div class="account_section">
+          <li><a href="#">Sign Out</a></li>
+          </div>
+        </div>
+     </div>
+
+    </nav> 
+    <!-------Navbar Close  ----------> 
+
+<div class="container"> 
+      
+        <!------------------ left side bar ------------------------- -->
+<div class="left-sidebar">
+        <div class="sidebar-profile-box">
+                <img src="Images/cover_pic.jpeg" width="100%" alt="" srcset="">  
+            <div class="sidebar_info"> 
+                 <img src="Images/user1.jpeg" alt="">
+                <h1>Isha Jindal</h1>
+                <h3>Software Engineer At Microsoft</h3> 
+                <ul>
+                 <li>Your Profile Views <span>477</span></li>
+                 <li>Your Post Views <span>1300</span></li>
+                 <li>Your Connections  <span>765</span></li>
+                </ul>
+            </div> 
+            <div class="sidebar_profile_link">
+                  <a href="#"><img src="Images/premium.png" alt="">See Your Premium Features</a>
+                  <a href="#"><img src="Images/items.png" alt="">My Items</a>
+            </div>
+        </div>  
+        <div class="sidebar-activity" id="SidebarActivity">
+            <h3>Recent</h3>
+            <a href="#"><img src="Images/recent.png" alt="" srcset="">Web Development </a>
+            <a href="#"><img src="Images/recent.png" alt="" srcset="">User Interface</a>
+            <a href="#"><img src="Images/recent.png" alt="" srcset="">Data Structure And Algorithms</a>
+            <a href="#"><img src="Images/recent.png" alt="" srcset="">Software Developer</a>
+            <a href="#"><img src="Images/recent.png" alt="" srcset="">Lets Grow More</a>
+            <a href="#"><img src="Images/recent.png" alt="" srcset="">Online Learning</a> 
+            <h3 style="color:rgb(17, 139, 215)">Groups</h3>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">Python Developers Community </a>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">Java Developers Community </a>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">Geeks For Geeks </a>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">Data Structure And Algorithms</a>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">Learn Coding Online Community </a>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">Web Designing Community </a>
+            <a href="#"><img src="Images/group.png" alt="" srcset="">HTML and CSS Learners </a>
+            <h3 style="color:rgb(17, 139, 215)">Followed</h3>
+            <a href="#"><img src="Images/hashtag.png" alt="" srcset="">WebDevelopment</a>
+            <a href="#"><img src="Images/hashtag.png" alt="" srcset="">UserInterface </a>
+            <a href="#"><img src="Images/hashtag.png" alt="" srcset="">OnlineLearning </a> 
+            <div class="discover-more">
+            <a href="#">Discover more </a>
+            </div>
+        </div> 
+        <p id="showmorelink" onclick="toggleActivity()">Show More <b>+</b></p>  
+</div>
+       <!-- ---------------------- Main Content-----------------------  -->
+        <div class="main-content ">
+          <div class="create_post">
+            <div class="create_post_input">
+               <img src="Images/user1.jpeg" alt="">
+                  <textarea rows="2" placeholder="Write a post"></textarea>
+            </div>
+            <div class="create_post_links"> 
+                <li><img src="Images/photo.png" alt="" srcset="">Photo</li>
+                <li><img src="Images/video.png" alt="" srcset="">Video</li>
+                <li><img src="Images/event.png" alt="" srcset="">Event</li>
+                <li><a href="#">Post</a></li>
+            </div>
+          </div> 
+
+        <div class="sort_by">
+           <hr>
+           <p>Sort By: <span>Top<img src="Images/down-arrow.png" alt=""></span></p>
+        </div> 
+         <!-- // This is post -1  -->
+        <div class="post">
+           <div class="post_author">
+            <img src="Images/user-2.png" > 
+            <div>
+               <h1>Kyle Liechty</h1> 
+               <small>Founder And Ceo of Frontened Masters</small> 
+               <small>2 hours ago</small>
+            </div> 
+           </div>
+           <p>The success of every web site depends on search engine optimization and digital marketing staretygy. If You are on the first page of all major seacrh engines then you are ahead among your competitior </p>
+           <img src="Images/post-image-1.png" width="100%" alt="" srcset=""> 
+          <div class="post_stats"> 
+            <div>
+             <img src="Images/like.png" alt="">
+             <img src="Images/love.png" alt="" srcset=""> 
+             <img src="Images/clap.png" alt="" srcset=""> 
+             <span class="liked_users">Vishal Saxena and 1776 others</span> 
+            </div> 
+           
+            <div>
+               <span>227 Comments &middot; 13 shares </span>
+            </div>
+
+          </div> 
+
+          <div class="post_activity">
+              <div>
+               <img src="Images/like.png" alt="" srcset=""> 
+               <span>Like</span>
+              </div>
+
+              <div>
+               <img src="Images/comment.png" alt="" srcset=""> 
+               <span>Comments</span>
+              </div>
+
+              <div>
+               <img src="Images/repost _1.png" alt="" srcset=""> 
+               <span>Repost </span>
+              </div>
+
+              <div>
+               <img src="Images/send.png" alt="" srcset=""> 
+               <span>Send</span>
+              </div>
+            </div> 
+          <div class="post_activity_link">
+             <img src="Images/user1.jpeg" class="user_image" alt="">  
+             <div class="comment_activity">
+             <textarea  rows="2" placeholder="Add a Comment..."></textarea> 
+             <img src="Images/smile.png" class="comment_image" alt="" srcset="">
+             <img src="Images/image.png" class="comment_image" alt="" srcset="">
+             </div>
+          </div>
+        </div>  
+        <!-- // This is post -2/ -->
+        <div class="post">
+           <div class="post_author">
+            <img src="Images/user-3.png" > 
+            <div>
+               <h1>Darika Jain</h1> 
+               <small>Software Developer At Salesforce</small> 
+               <small>4 hours ago</small>
+            </div> 
+           </div>
+           <p>The success of every web site depends on search engine optimization and digital marketing staretygy. If You are on the first page of all major seacrh engines then you are ahead among your competitior </p>
+           <img src="Images/post-image-2.png" width="100%" alt="" srcset=""> 
+          <div class="post_stats"> 
+            <div>
+             <img src="Images/like.png" alt="">
+             <img src="Images/love.png" alt="" srcset=""> 
+             <img src="Images/clap.png" alt="" srcset=""> 
+             <span class="liked_users">Deeksha Pandey and 456 others</span> 
+            </div> 
+           
+            <div>
+               <span>37 Comments &middot; 13 shares </span>
+            </div>
+
+          </div> 
+
+          <div class="post_activity">
+              <div>
+               <img src="Images/like.png" alt="" srcset=""> 
+               <span>Like</span>
+              </div>
+
+              <div>
+               <img src="Images/comment.png" alt="" srcset=""> 
+               <span>Comments</span>
+              </div>
+
+              <div>
+               <img src="Images/repost _1.png" alt="" srcset=""> 
+               <span>Repost </span>
+              </div>
+
+              <div>
+               <img src="Images/send.png" alt="" srcset=""> 
+               <span>Send</span>
+              </div>
+            </div> 
+          <div class="post_activity_link">
+             <img src="Images/user1.jpeg" class="user_image" alt="">  
+             <div class="comment_activity">
+             <textarea  rows="2" placeholder="Add a Comment..."></textarea> 
+             <img src="Images/smile.png" class="comment_image" alt="" srcset="">
+             <img src="Images/image.png" class="comment_image" alt="" srcset="">
+             </div>
+          </div>
+        </div>
+
+        <!-- This is post 3 -->
+        <div class="post">
+           <div class="post_author">
+            <img src="Images/user-4.png" > 
+            <div>
+               <h1>Isha Porwal</h1> 
+               <small>Product Manager At Google</small> 
+               <small>1 hours ago</small>
+            </div> 
+           </div>
+           <p>The success of every web site depends on search engine optimization and digital marketing staretygy. If You are on the first page of all major seacrh engines then you are ahead among your competitior </p>
+           <img src="Images/post-image-3.png" width="100%" alt="" srcset=""> 
+          <div class="post_stats"> 
+            <div>
+             <img src="Images/like.png" alt="">
+             <img src="Images/love.png" alt="" srcset=""> 
+             <img src="Images/clap.png" alt="" srcset=""> 
+             <span class="liked_users">Hina Arora and 146 others</span> 
+            </div> 
+           
+            <div>
+               <span>56 Comments &middot; 4 shares </span>
+            </div>
+
+          </div> 
+
+          <div class="post_activity">
+              <div>
+               <img src="Images/like.png" alt="" srcset=""> 
+               <span>Like</span>
+              </div>
+
+              <div>
+               <img src="Images/comment.png" alt="" srcset=""> 
+               <span>Comments</span>
+              </div>
+
+              <div>
+               <img src="Images/repost _1.png" alt="" srcset=""> 
+               <span>Repost </span>
+              </div>
+
+              <div>
+               <img src="Images/send.png" alt="" srcset=""> 
+               <span>Send</span>
+              </div>
+            </div> 
+          <div class="post_activity_link">
+             <img src="Images/user1.jpeg" class="user_image" alt="">  
+             <div class="comment_activity">
+             <textarea  rows="2" placeholder="Add a Comment..."></textarea> 
+             <img src="Images/smile.png" class="comment_image" alt="" srcset="">
+             <img src="Images/image.png" class="comment_image" alt="" srcset="">
+             </div>
+          </div>
+        </div> 
+        <!-- // This is post-4 -->
+        <div class="post">
+           <div class="post_author">
+            <img src="Images/user-6.jpeg" > 
+            <div>
+               <h1>Cherie Lim</h1> 
+               <small>Comms Google</small> 
+               <small>35 minutes ago</small>
+            </div> 
+           </div>
+           <p>The success of every web site depends on search engine optimization and digital marketing staretygy. If You are on the first page of all major seacrh engines then you are ahead among your competitior </p>
+           <img src="Images/post-image-4.png" width="100%" alt="" srcset=""> 
+          <div class="post_stats"> 
+            <div>
+             <img src="Images/like.png" alt="">
+             <img src="Images/love.png" alt="" srcset=""> 
+             <img src="Images/clap.png" alt="" srcset=""> 
+             <span class="liked_users">JooDee Stensland and 176 others</span> 
+            </div> 
+           
+            <div>
+               <span>27 Comments &middot; 12 shares </span>
+            </div>
+
+          </div> 
+
+          <div class="post_activity">
+              <div>
+               <img src="Images/like.png" alt="" srcset=""> 
+               <span>Like</span>
+              </div>
+
+              <div>
+               <img src="Images/comment.png" alt="" srcset=""> 
+               <span>Comments</span>
+              </div>
+
+              <div>
+               <img src="Images/repost _1.png" alt="" srcset=""> 
+               <span>Repost </span>
+              </div>
+
+              <div>
+               <img src="Images/send.png" alt="" srcset=""> 
+               <span>Send</span>
+              </div>
+            </div> 
+          <div class="post_activity_link">
+             <img src="Images/user1.jpeg" class="user_image" alt="">  
+             <div class="comment_activity">
+             <textarea  rows="2" placeholder="Add a Comment..."></textarea> 
+             <img src="Images/smile.png" class="comment_image" alt="" srcset="">
+             <img src="Images/image.png" class="comment_image" alt="" srcset="">
+             </div>
+          </div>
+        </div> 
+        <div class="post">
+           <div class="post_author">
+            <img src="Images/user-4.png" > 
+            <div>
+               <h1>Zizhao Z.</h1> 
+               <small>Staff Research At Amazon</small> 
+               <small>1 hours ago</small>
+            </div> 
+           </div>
+           <p>The success of every web site depends on search engine optimization and digital marketing staretygy. If You are on the first page of all major seacrh engines then you are ahead among your competitior </p>
+           <img src="Images/post-image-5.jpg" width="100%" alt="" srcset=""> 
+          <div class="post_stats"> 
+            <div>
+             <img src="Images/like.png" alt="">
+             <img src="Images/love.png" alt="" srcset=""> 
+             <img src="Images/clap.png" alt="" srcset=""> 
+             <span class="liked_users">Vishal Jindal and 3465 others</span> 
+            </div> 
+           
+            <div>
+               <span>56 Comments &middot; 4 shares </span>
+            </div>
+
+          </div> 
+
+          <div class="post_activity">
+              <div>
+               <img src="Images/like.png" alt="" srcset=""> 
+               <span>Like</span>
+              </div>
+
+              <div>
+               <img src="Images/comment.png" alt="" srcset=""> 
+               <span>Comments</span>
+              </div>
+
+              <div>
+               <img src="Images/repost _1.png" alt="" srcset=""> 
+               <span>Repost </span>
+              </div>
+
+              <div>
+               <img src="Images/send.png" alt="" srcset=""> 
+               <span>Send</span>
+              </div>
+            </div> 
+          <div class="post_activity_link">
+             <img src="Images/user1.jpeg" class="user_image" alt="">  
+             <div class="comment_activity">
+             <textarea  rows="2" placeholder="Add a Comment..."></textarea> 
+             <img src="Images/smile.png" class="comment_image" alt="" srcset="">
+             <img src="Images/image.png" class="comment_image" alt="" srcset="">
+             </div>
+          </div>
+        </div> 
+
+        </div>        
+        <!-- --------------------Right Side Bar----------------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar_news">
+               <img src="Images/more.png" class="info_icon" alt="LinkedIn News">  
+              <h3>LinkedIn News</h3> 
+              <ul>  
+               <li><a href="#"> High Demand For skilled Man Power</a> 
+               <span>1day ago &middot; 13,567 readers</span></li>
+               <li><a href="#">US visa Delayed Hit Indian It Talent</a> 
+               <span>1day ago &middot; 12,237 readers</span></li>
+               <li><a href="#">Cricket Broadcast get tech savy </a> 
+               <span>2day ago &middot; 9,567 readers</span></li>
+               <li><a href="#">India's industry IVf grow rapidly </a> 
+               <span>1day ago &middot; 8,467 readers</span></li>
+               <li><a href="#"> Fraud Detection is focus on India Corporation </a> 
+               <span>4day ago &middot; 1,469 readers</span></li>
+               <li><a href="#"> Gautam Adani's is world third richest person</a> 
+               <span>4day ago &middot; 1,434 readers</span></li>
+              </ul>
+               <a href="#" class="read-more-link">Show More</a>
+            </div> 
+             <div class="sidebar_ad">
+               <small>Ad &middot; &middot; &middot;</small> 
+               <p>Master the 5 principle of Web Designing</p> 
+                <div>
+                <img src="Images/user1.jpeg" alt="" srcset="">
+                <img src="Images/mi-logo.png" alt="" srcset="">
+                </div> 
+                <b>Brand And Demand in Xiaomi</b> 
+                <a href="#" class="learn_more">Learn More</a>
+             </div> 
+
+            <div class="sidebar_links">
+             <a href="#" class="sidebar_links_info">About</a>
+             <a href="#" class="sidebar_links_info">Accessibility</a>
+             <a href="#" class="sidebar_links_info">Help Centre</a>
+             <a href="#" class="sidebar_links_info">Privacy And Terms</a>
+             <a href="#" class="sidebar_links_info">Ad Choice</a>
+             <a href="#" class="sidebar_links_info">Adverstising</a>
+             <a href="#" class="sidebar_links_info">Business Service </a>
+             <a href="#" class="sidebar_links_info">Get The LinkedIn app</a>
+             <a href="#" class="sidebar_links_info">More</a> 
+              
+              <div class="copyright_message">
+              <img src="Images/logo.png" alt="">
+              <span>LinkedIn Corporation copyright &copy 2023</span>
+              </div>
+            </div>
+               
+        
+        </div>
+
+</div> 
+   <script>
+       let profile_menu=document.getElementById('profile_menu');
+        function toggleMenu(){
+           profile_menu.classList.toggle("open-menu")
+        }
+   </script> 
+   <script>
+      let sidebar=document.getElementById('SidebarActivity'); 
+      let morelink=document.getElementById('showmorelink'); 
+      function toggleActivity(){
+         sidebar.classList.toggle('open-activity');  
+         if(sidebar.classList.contains('open-activity')){
+            morelink.innerHTML="Show Less <b>-</b>"
+         } 
+         else{
+            morelink.innerHTML="Show More <b>+</b>"
+         }
+      }
+   </script>
+</body>
+</html>
